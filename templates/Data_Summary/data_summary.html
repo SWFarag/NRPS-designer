@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block heading %} {{super()}} {% endblock %}
+
+
+{% block content %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class = "col-sm-6">
+            <h2>MIBiG Linkers</h2>
+            <table class="table table-striped ">
+            <tr>
+                <th>Number of MIBiG NRP Biosynthetic Gene Clusters</th>
+                <td>408</td>
+            </tr>
+            <tr>
+                <th>Number of Inter-Modular Linkers</th>
+                <td>586</td>
+            </tr>
+            <tr>
+                <th>Number of Unique Inter-Modular Linkers</th>
+                <td>557</td>
+            </tr>
+            <tr>
+                <th>Number of unique Adenylation Domain Substrate Pairs</th>
+                <td>185</td>
+            </tr>
+        </table>
+        </div>
+        <div class = "col-sm-6">
+             <figure>
+                 <img src="/static/images/MIBiG_length.png" class="img-rounded" alt="selectivity" height="350" width="500" >
+                 <br>
+                 <figcaption style="width: 47%"><b>Fig1.</b> MIBiG IMLs length distribution.</figcaption>
+             </figure>
+        </div>
+    </div>
+    <div class="row">
+         <div class = "col-sm-6">
+            <h2>NCBI Linkers</h2>
+            <table class="table table-striped ">
+                <tr>
+                    <th>Number of NCBI RefSeq Bacterial Genomes</th>
+                    <td>39205</td>
+                </tr>
+                <tr>
+                    <th>Number of NRP Biosynthetic Gene Clusters</th>
+                    <td>51810</td>
+                </tr>
+                <tr>
+                    <th>Number of Inter-Modular Linkers</th>
+                    <td>17454</td>
+                </tr>
+
+                <tr>
+                    <th>Number of Unique Inter-Modular Linkers</th>
+                    <td>8143</td>
+                </tr>
+
+                <tr>
+                    <th>Number of Unique Adenylation Domain Substrate Pairs</th>
+                    <td>352</td>
+                </tr>
+            </table>
+         </div>
+        <div class = "col-sm-6">
+             <figure>
+                 <img src="/static/images/NCBI_length.png" class="img-rounded" alt="selectivity" height="350" width="500" >
+                 <br>
+                 <figcaption style="width: 47%"><b>Fig2.</b> NCBI IMLs length distribution.</figcaption>
+             </figure>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+{% block footer %} {{super()}} {% endblock %}
+
+
